@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useState } from "react";
-import styles from "./learn.module.css";
 
 const LearnPage = () => {
   const content = [
@@ -52,7 +51,7 @@ const LearnPage = () => {
             width={200}
             height={200}
           />
-          <div className={styles.bubble}>
+          <div className="bubble">
             <div className="text-2xl text-white">{content[index].text}</div>
             <div className="flex justify-between w-full">
               <button
