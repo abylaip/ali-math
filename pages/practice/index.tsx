@@ -61,14 +61,14 @@ const PracticePage = () => {
         <p>7 x 3 =</p>
         <input
           type="text"
-          className={`w-20 h-20 border ${
+          className={`w-20 h-20 border text-center ${
             state.case === 2 ? "border-green-500" : "border-black"
           }`}
           onChange={(e) => setState({ ...state, ans: e.target.value })}
         />
       </div>
       <Link href="/">
-        <a className="rounded-lg bg-blue-600 py-2 px-8 text-white text-3xl text-center absolute left-4 bottom-4">
+        <a className="rounded-lg bg-blue-600 py-2 px-8 text-white text-3xl text-center absolute left-4 bottom-4 uppercase">
           Exit
         </a>
       </Link>
@@ -79,7 +79,7 @@ const PracticePage = () => {
           } else if (state.case === 1) {
             check();
           } else if (state.case === 2) {
-            router.push("/test");
+            router.push("/");
           }
         }}
         className="rounded-lg bg-blue-600 py-2 px-8 text-white text-3xl text-center absolute right-4 bottom-4 uppercase"

@@ -111,7 +111,7 @@ const LearnPage = () => {
           Exit
         </a>
       </Link>
-      <Link href="/practice">
+      <Link href="/">
         <a
           className={`rounded-lg bg-blue-600 py-2 px-8 text-white text-3xl text-center absolute right-4 bottom-4 ${
             index === 2 ? "block" : "hidden"
